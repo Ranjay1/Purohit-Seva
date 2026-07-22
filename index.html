@@ -3,141 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा - कर्मकांडी ब्राह्मण एवं पूजा मार्गदर्शन</title>
+    <title>पुरोहित सेवा - ज्योतिष, कर्मकांड एवं वास्तु संस्थान</title>
+    <!-- Tailwind CSS for Premium Design -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Traditional Sanskrit/Hindi Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        /* मुख्य सेटिंग्स */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fffaf0;
-            color: #333;
-        }
-        /* हेडर और बैनर */
-        header {
-            background: linear-gradient(135deg, #ff4500, #ff8c00);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        /* मुख्य कंटेनर */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-        /* कार्ड स्टाइल (सेवाओं के लिए) */
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            border-left: 5px solid #ff4500;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: #8b0000;
-            margin-top: 0;
-        }
-        /* पूजा सूची */
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 0;
-            list-style-type: none;
-        }
-        .service-list li {
-            background: #ffe4e1;
-            padding: 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            color: #8b0000;
-            text-align: center;
-        }
-        /* बटन */
-        .btn-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #8b0000;
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(139,0,0,0.3);
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background-color: #ff4500;
-            transform: scale(1.05);
-        }
-        /* फुटर */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 50px;
-        }
+        body { font-family: 'Poppins', sans-serif; }
+        .serif-font { font-family: 'Yatra One', serif; }
+        .gradient-orange { background: linear-gradient(135deg, #e65c00 0%, #f9d423 100%); }
     </style>
 </head>
-<body>
+<body class="bg-amber-50 text-gray-800">
 
-    <!-- हेडर सेक्शन -->
-    <header>
-        <h1>।। पुरोहित सेवा ।।</h1>
-        <p>शुद्ध एवं प्रामाणिक वैदिक कर्मकांड, पूजा एवं अनुष्ठान मार्गदर्शन</p>
+    <!-- 1. मुख्य हेडर और सोशल मीडिया लिंक्स -->
+    <header class="gradient-orange text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <h1 class="serif-font text-2xl md:text-3xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-om text-yellow-300 animate-spin-slow"></i> पुरोहित सेवा संस्थान
+            </h1>
+            <nav class="hidden lg:flex space-x-6 font-semibold">
+                <a href="#about" class="hover:text-yellow-200 transition">संस्था परिचय</a>
+                <a href="#services" class="hover:text-yellow-200 transition">सेवाएँ</a>
+                <a href="#blogs" class="hover:text-yellow-200 transition">धार्मिक लेख</a>
+                <a href="#gallery" class="hover:text-yellow-200 transition">गैलरी</a>
+                <a href="#forms-section" class="hover:text-yellow-200 text-yellow-300">पुरोहित जुड़ें / जजमान इंक्वायरी</a>
+            </nav>
+            <!-- सोशल मीडिया लिंक्स -->
+            <div class="flex space-x-4 text-xl">
+                <a href="https://facebook.com" target="_blank" class="hover:text-blue-200"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-pink-200"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" class="hover:text-red-200"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me" target="_blank" class="hover:text-green-200"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        
-        <!-- हमारे बारे में -->
-        <div class="card">
-            <h2>हमारे बारे में</h2>
-            <p>स्वस्ति श्री! पुरोहित सेवा में आपका स्वागत है। हमारे यहाँ अनुभवी, विद्वान और योग्य कर्मकांडी ब्राह्मणों द्वारा संपूर्ण विधि-विधान और शास्त्रों के अनुसार सभी प्रकार के मांगलिक कार्य, यज्ञ और पूजा संपन्न कराई जाती है। हम धर्म और परंपराओं की शुद्धता को बनाए रखने के लिए प्रतिबद्ध हैं।</p>
+    <!-- 2. मुख्य बैनर (Hero Section) -->
+    <section class="relative bg-cover bg-center py-24 text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://unsplash.com');">
+        <div class="container mx-auto px-4">
+            <h2 class="serif-font text-4xl md:text-6xl text-yellow-400 mb-4 animate-pulse">वसुधैव कुटुम्बकम्</h2>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 font-light">घर बैठे देश के किसी भी कोने से योग्य पुरोहितों द्वारा करवाएं वैदिक पूजा, प्राप्त करें सटीक ज्योतिष एवं वास्तु समाधान।</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#forms-section" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105">जजमान पूजन बुकिंग</a>
+                <a href="#forms-section" class="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 font-bold px-8 py-3 rounded-full transition transform hover:scale-105">पुरोहित रजिस्ट्रेशन (सभी राज्य)</a>
+            </div>
         </div>
+    </section>
 
-        <!-- प्रमुख सेवाएँ -->
-        <div class="card">
-            <h2>प्रमुख वैदिक सेवाएँ</h2>
-            <p>हम निम्नलिखित सभी धार्मिक अनुष्ठानों के लिए आचार्य एवं भूदेव (ब्राह्मण) उपलब्ध कराते हैं:</p>
-            <ul class="service-list">
-                <li>✨ गृह प्रवेश एवं वास्तु शांति</li>
-                <li>✨ श्री सत्यनारायण व्रत कथा</li>
-                <li>✨ विवाह एवं उपनयन संस्कार</li>
-                <li>✨ महामृत्युंजय एवं नवग्रह जाप</li>
-                <li>✨ रुद्राभिषेक एवं दुर्गा सप्तशती</li>
-                <li>✨ श्राद्ध, तर्पण एवं नारायण बली</li>
-            </ul>
+    <!-- 3. संस्था परिचय (About Section) -->
+    <section id="about" class="py-16 container mx-auto px-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-t-4 border-orange-500">
+            <h2 class="serif-font text-3xl font-bold text-orange-600 mb-6 text-center">संस्था के बारे में (About Us)</h2>
+            <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-4 text-center">
+                <p>
+                    <strong>पुरोहित सेवा संस्थान</strong> एक पावन डिजिटल मंच है जिसका एकमात्र उद्देश्य वैदिक सनातन धर्म की परंपराओं को आधुनिक युग में अक्षुण्ण बनाए रखना है। हमारी संस्था संपूर्ण भारतवर्ष के विप्रजनों, कर्मकांडी ब्राह्मणों, ज्योतिषाचार्यों और वास्तु विशेषज्ञों को एक माला में पिरोने का कार्य कर रही है।
+                </p>
+                <p class="bg-orange-50 p-4 rounded-xl italic font-semibold text-orange-700">
+                    "हमारा लक्ष्य: हर घर शुद्ध वैदिक अनुष्ठान, हर जजमान को सही मार्गदर्शन।"
+                </p>
+                <p>
+                    इस मंच के माध्यम से किसी भी जिले या राज्य के योग्य पुरोहित हमसे सीधे जुड़ सकते हैं। वहीं दूसरी ओर, दुनिया के किसी भी कोने में बैठे जजमान अपनी आध्यात्मिक आवश्यकताओं (जैसे विवाह, कथा, नवग्रह शांति, कुंडली विश्लेषण या वास्तु विजिट) के लिए सीधे पूछताछ और बुकिंग कर सकते हैं।
+                </p>
+            </div>
         </div>
+    </section>
 
-        <!-- संपर्क करें बटन -->
-        <div class="btn-container">
-            <a href="tel:+916203825376" class="btn">📞 अभी दक्षिणा एवं पूजा बुक करें</a>
+    <!-- 4. मुख्य विधाएं/सेवाएं (Services) -->
+    <section id="services" class="py-12 bg-orange-100">
+        <div class="container mx-auto px-4">
+            <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-10">हमारी मुख्य विधाएं</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-fire text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">वैदिक कर्मकांड</h3><p class="text-sm text-gray-500">समस्त पूजा, यज्ञ, अनुष्ठान एवं संस्कार</p></div>
+                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-star-and-crescent text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">सटीक ज्योतिष</h3><p class="text-sm text-gray-500">कुंडली मिलान, रत्न एवं ग्रह शांति सलाह</p></div>
+                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-compass text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">वास्तु शास्त्र</h3><p class="text-sm text-gray-500">बिना तोड़-फोड़ के कमर्शियल व घरेलू उपाय</p></div>
+                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-book-open text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">अध्यात्म ज्ञान</h3><p class="text-sm text-gray-500">श्रीमद्भागवत कथा, प्रवचन एवं सत्संग</p></div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- 5. धार्मिक लेख सेक्शन (Blogs) -->
+    <section id="blogs" class="py-16 container mx-auto px-4">
+        <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-8">नवीनतम धार्मिक लेख एवं ज्ञान</h2>
+        <div id="blog-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- डिफ़ॉल्ट लेख 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border">
+                <div class="p-5">
+                    <span class="text-xs bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full font-bold">ज्योतिष एवं वास्तु</span>
+                    <h3 class="font-bold text-xl mt-3 text-gray-900">घर के मुख्य द्वार का वास्तु नियम</h3>
+                    <p class="text-gray-600 text-sm mt-2">घर का मुख्य द्वार हमेशा पूर्व या उत्तर दिशा में होना शुभ माना जाता है। प्रवेश द्वार पर स्वास्तिक अवश्य बनाएं...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- फुटर सेक्शन -->
-    <footer>
-        <p>&copy; 2026 पुरोहित सेवा। सनातन धर्म की जय हो।</p>
-    </footer>
+    <!-- 6. फोटो और वीडियो गैलरी (Multimedia Gallery) -->
+    <section id="gallery" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-8">संस्थान गैलरी</h2>
+            
+            <!-- फोटो ग्रिड -->
+            <h3 class="font-bold text-lg mb-4 text-gray-700 border-l-4 border-orange-500 pl-2">नवीनतम तस्वीरें</h3>
+            <div id="photo-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <img src="https://unsplash.com" alt="Puja" class="rounded-lg shadow object-cover h-44 w-full">
+            </div>
 
-</body>
-</html>
+            <!-- वीडियो ग्रिड -->
+            <h3 class="font-bold text-lg mb-4 text-gray-700 border-l-4 border-orange-500 pl-2">कथा एवं भजन वीडियो</h3>
+            <div id="video-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+                    <iframe class="w-full h-52" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. फॉर्म्स: पुरोहित जुड़ें और जजमान इंक्वायरी -->
+    <section id="forms-section" class="py-16 bg-orange-50 border-t border-b border-orange-200">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- फॉर्म 1: पुरोहित रजिस्ट्रेशन -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-orange-200">
+                <h3 class="serif-font text-2xl font-bold text-orange-600 mb-2"><i class="fa-solid fa-user-plus text-yellow-500"></i> पुरोहित संघ से जुड़ें</h3>
+                <p class="text-gray-500 text-xs mb-6">देश के किसी भी हिस्से से ब्राह्मण/पुरोहित मंच का हिस्सा बनने के लिए फॉर्म भरें।</p>
+                <form onsubmit="saveForm(event, 'पुरोहित रजिस्ट्रेशन सफ़ल!')" class="space-y-4">
+                    <input type="text" required placeholder="अपना पूरा नाम" class="w-full p-2.5 border rounded-lg outline-none focus:ring-2 focus:ring-orange-400">
+                    <div class="grid grid-cols-2 gap-4">
