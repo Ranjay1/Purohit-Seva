@@ -3,131 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा - ज्योतिष, कर्मकांड एवं वास्तु संस्थान</title>
-    <!-- Tailwind CSS for Premium Design -->
+    <title>पुरोहित सेवा - सनातन वैदिक प्रबंधन</title>
     <script src="https://tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Traditional Sanskrit/Hindi Google Fonts -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; }
-        .serif-font { font-family: 'Yatra One', serif; }
-        .gradient-orange { background: linear-gradient(135deg, #e65c00 0%, #f9d423 100%); }
-    </style>
 </head>
-<body class="bg-amber-50 text-gray-800">
+<body class="bg-amber-50 text-stone-800 font-sans">
 
-    <!-- 1. मुख्य हेडर और सोशल मीडिया लिंक्स -->
-    <header class="gradient-orange text-white shadow-xl sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-            <h1 class="serif-font text-2xl md:text-3xl font-bold flex items-center gap-2">
-                <i class="fa-solid fa-om text-yellow-300 animate-spin-slow"></i> पुरोहित सेवा संस्थान
-            </h1>
-            <nav class="hidden lg:flex space-x-6 font-semibold">
-                <a href="#about" class="hover:text-yellow-200 transition">संस्था परिचय</a>
-                <a href="#services" class="hover:text-yellow-200 transition">सेवाएँ</a>
-                <a href="#blogs" class="hover:text-yellow-200 transition">धार्मिक लेख</a>
-                <a href="#gallery" class="hover:text-yellow-200 transition">गैलरी</a>
-                <a href="#forms-section" class="hover:text-yellow-200 text-yellow-300">पुरोहित जुड़ें / जजमान इंक्वायरी</a>
-            </nav>
-            <!-- सोशल मीडिया लिंक्स -->
-            <div class="flex space-x-4 text-xl">
-                <a href="https://facebook.com" target="_blank" class="hover:text-blue-200"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://instagram.com" target="_blank" class="hover:text-pink-200"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://youtube.com" target="_blank" class="hover:text-red-200"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://wa.me" target="_blank" class="hover:text-green-200"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- Top Contact Bar -->
+    <div class="bg-amber-500 text-stone-900 py-1.5 px-4 text-center font-bold text-sm flex justify-center items-center gap-4">
+        <span><i class="fa-solid fa-phone"></i> संपर्क सूत्र: <a href="tel:6203825376" class="underline">6203825376</a></span>
+        <span class="hidden sm:inline">|</span>
+        <a href="https://wa.me" target="_blank" class="bg-emerald-600 text-white px-2 py-0.5 rounded hover:bg-emerald-700 transition flex items-center gap-1">
+            <i class="fa-brands fa-whatsapp"></i> व्हाट्सएप करें
+        </a>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-orange-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🔱</span>
+                <h1 class="text-2xl font-bold tracking-wide">पुरोहित सेवा</h1>
             </div>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#categories" class="hover:text-amber-200 transition">श्रेणियाँ</a>
+                <a href="#purohits" class="hover:text-amber-200 transition">पुरोहित जुड़ें</a>
+                <a href="#booking" class="hover:text-amber-200 transition">बुकिंग</a>
+                <a href="#donation" class="hover:text-amber-200 transition">दान करे</a>
+            </nav>
+            <a href="tel:6203825376" class="bg-white text-orange-600 px-4 py-2 rounded-full font-bold hover:bg-amber-100 transition text-sm flex items-center gap-2">
+                <i class="fa-solid fa-phone-flip"></i> कॉल करें
+            </a>
         </div>
     </header>
 
-    <!-- 2. मुख्य बैनर (Hero Section) -->
-    <section class="relative bg-cover bg-center py-24 text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://unsplash.com');">
-        <div class="container mx-auto px-4">
-            <h2 class="serif-font text-4xl md:text-6xl text-yellow-400 mb-4 animate-pulse">वसुधैव कुटुम्बकम्</h2>
-            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 font-light">घर बैठे देश के किसी भी कोने से योग्य पुरोहितों द्वारा करवाएं वैदिक पूजा, प्राप्त करें सटीक ज्योतिष एवं वास्तु समाधान।</p>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-orange-500 to-amber-600 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">शुद्ध वैदिक एवं प्रामाणिक पुरोहित सेवा</h2>
+            <p class="text-lg md:text-xl mb-6 opacity-90">घर बैठे अनुभवी विद्वानों से ज्योतिष, कर्मकांड, वास्तु परामर्श और आध्यात्मिक मार्गदर्शन प्राप्त करें।</p>
+            <p class="text-2xl font-bold text-amber-200 mb-8 flex justify-center items-center gap-2">
+                <i class="fa-solid fa-headset"></i> तुरंत बुकिंग हेतु संपर्क: 6203825376
+            </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#forms-section" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105">जजमान पूजन बुकिंग</a>
-                <a href="#forms-section" class="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 font-bold px-8 py-3 rounded-full transition transform hover:scale-105">पुरोहित रजिस्ट्रेशन (सभी राज्य)</a>
+                <a href="#booking" class="bg-white text-orange-600 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-stone-100 transition">ऑनलाइन बुक करें</a>
+                <a href="tel:6203825376" class="bg-amber-400 text-stone-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-amber-300 transition">सीधे बात करें</a>
             </div>
         </div>
     </section>
 
-    <!-- 3. संस्था परिचय (About Section) -->
-    <section id="about" class="py-16 container mx-auto px-4">
-        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-t-4 border-orange-500">
-            <h2 class="serif-font text-3xl font-bold text-orange-600 mb-6 text-center">संस्था के बारे में (About Us)</h2>
-            <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-4 text-center">
-                <p>
-                    <strong>पुरोहित सेवा संस्थान</strong> एक पावन डिजिटल मंच है जिसका एकमात्र उद्देश्य वैदिक सनातन धर्म की परंपराओं को आधुनिक युग में अक्षुण्ण बनाए रखना है। हमारी संस्था संपूर्ण भारतवर्ष के विप्रजनों, कर्मकांडी ब्राह्मणों, ज्योतिषाचार्यों और वास्तु विशेषज्ञों को एक माला में पिरोने का कार्य कर रही है।
-                </p>
-                <p class="bg-orange-50 p-4 rounded-xl italic font-semibold text-orange-700">
-                    "हमारा लक्ष्य: हर घर शुद्ध वैदिक अनुष्ठान, हर जजमान को सही मार्गदर्शन।"
-                </p>
-                <p>
-                    इस मंच के माध्यम से किसी भी जिले या राज्य के योग्य पुरोहित हमसे सीधे जुड़ सकते हैं। वहीं दूसरी ओर, दुनिया के किसी भी कोने में बैठे जजमान अपनी आध्यात्मिक आवश्यकताओं (जैसे विवाह, कथा, नवग्रह शांति, कुंडली विश्लेषण या वास्तु विजिट) के लिए सीधे पूछताछ और बुकिंग कर सकते हैं।
-                </p>
+    <!-- Categories Section -->
+    <section id="categories" class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-orange-700 mb-12 relative">
+            मुख्य श्रेणियाँ
+            <span class="block w-20 h-1 bg-amber-500 mx-auto mt-2"></span>
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Category 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
+                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-star-and-crescent"></i></div>
+                <h4 class="text-xl font-bold mb-2">ज्योतिष परामर्श</h4>
+                <p class="text-stone-600 text-sm mb-4">कुंडली विश्लेषण, ग्रह शांति, गुण मिलान और भविष्यफल की सटीक गणना।</p>
+                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
+                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-fire-burner"></i></div>
+                <h4 class="text-xl font-bold mb-2">वैदिक कर्मकांड</h4>
+                <p class="text-stone-600 text-sm mb-4">रुद्राभिषेक, सत्यनारायण कथा, गृह प्रवेश, मुंडन एवं समस्त संस्कार पूजन।</p>
+                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
+                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-compass"></i></div>
+                <h4 class="text-xl font-bold mb-2">वास्तु शास्त्र</h4>
+                <p class="text-stone-600 text-sm mb-4">आवासीय और व्यावसायिक भूमि/भवन का वास्तु निरीक्षण एवं दोष निवारण।</p>
+                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
+                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-om"></i></div>
+                <h4 class="text-xl font-bold mb-2">अध्यात्म व प्रवचन</h4>
+                <p class="text-stone-600 text-sm mb-4">श्रीमद्भागवत कथा, सत्संग, ध्यान-साधना और मानसिक शांति हेतु मार्गदर्शन।</p>
+                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
+                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h4 class="text-xl font-bold mb-2">वैदिक स्वास्थ्य</h4>
+                <p class="text-stone-600 text-sm mb-4">यज्ञ थेरेपी (मंत्र चिकित्सा), योग, आयुर्वेद और प्राकृतिक जीवन शैली के उपाय।</p>
+                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-500 hover:shadow-xl transition">
+                <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-hands-praying"></i></div>
+                <h4 class="text-xl font-bold mb-2">दान करे</h4>
+                <p class="text-stone-600 text-sm mb-4">निर्धन पुरोहितों की शिक्षा, चिकित्सा, गौ-सेवा और वेद पाठशालाओं के लिए सहयोग।</p>
+                <a href="#donation" class="text-amber-600 font-semibold text-sm hover:underline">सहयोग करें →</a>
             </div>
         </div>
     </section>
 
-    <!-- 4. मुख्य विधाएं/सेवाएं (Services) -->
-    <section id="services" class="py-12 bg-orange-100">
-        <div class="container mx-auto px-4">
-            <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-10">हमारी मुख्य विधाएं</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-fire text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">वैदिक कर्मकांड</h3><p class="text-sm text-gray-500">समस्त पूजा, यज्ञ, अनुष्ठान एवं संस्कार</p></div>
-                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-star-and-crescent text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">सटीक ज्योतिष</h3><p class="text-sm text-gray-500">कुंडली मिलान, रत्न एवं ग्रह शांति सलाह</p></div>
-                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-compass text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">वास्तु शास्त्र</h3><p class="text-sm text-gray-500">बिना तोड़-फोड़ के कमर्शियल व घरेलू उपाय</p></div>
-                <div class="bg-white p-6 rounded-xl shadow text-center"><i class="fa-solid fa-book-open text-orange-500 text-4xl mb-3"></i><h3 class="font-bold text-lg mb-1">अध्यात्म ज्ञान</h3><p class="text-sm text-gray-500">श्रीमद्भागवत कथा, प्रवचन एवं सत्संग</p></div>
+    <!-- Purohit Registration Info (पुरोहित जुड़ें) -->
+    <section id="purohits" class="bg-orange-100 py-16 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-3xl font-bold text-orange-800 mb-4">नए पुरोहित हमसे जुड़ें</h3>
+            <p class="text-stone-700 mb-6">यदि आप कर्मकांड, ज्योतिष, वास्तु या अध्यात्म के ज्ञाता हैं और इस सेवा पोर्टल से जुड़ना चाहते हैं, तो कृपया नीचे दिए गए नंबर पर अपना विवरण भेजें।</p>
+            <div class="inline-block bg-white p-4 rounded-xl shadow-md border border-orange-200">
+                <p class="font-bold text-lg text-stone-800 mb-2">पंजीकरण के लिए संपर्क करें:</p>
+                <a href="tel:6203825376" class="text-2xl font-extrabold text-orange-600 hover:underline block">6203825376</a>
+                <a href="https://wa.me?text=प्रणाम,%20मैं%20पुरोहित%20सेवा%20पोर्टल%20से%20जुड़ना%20चाहता%20हूँ।" target="_blank" class="mt-2 inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-emerald-700 transition">
+                    <i class="fa-brands fa-whatsapp"></i> व्हाट्सएप पर विवरण भेजें
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- 5. धार्मिक लेख सेक्शन (Blogs) -->
-    <section id="blogs" class="py-16 container mx-auto px-4">
-        <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-8">नवीनतम धार्मिक लेख एवं ज्ञान</h2>
-        <div id="blog-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- डिफ़ॉल्ट लेख 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border">
-                <div class="p-5">
-                    <span class="text-xs bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full font-bold">ज्योतिष एवं वास्तु</span>
-                    <h3 class="font-bold text-xl mt-3 text-gray-900">घर के मुख्य द्वार का वास्तु नियम</h3>
-                    <p class="text-gray-600 text-sm mt-2">घर का मुख्य द्वार हमेशा पूर्व या उत्तर दिशा में होना शुभ माना जाता है। प्रवेश द्वार पर स्वास्तिक अवश्य बनाएं...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. फोटो और वीडियो गैलरी (Multimedia Gallery) -->
-    <section id="gallery" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="serif-font text-3xl font-bold text-center text-orange-600 mb-8">संस्थान गैलरी</h2>
+    <!-- Booking Form Section -->
+    <section id="booking" class="container mx-auto px-4 py-16 max-w-2xl">
+        <div class="bg-white rounded-2xl shadow-xl p-8 border border-orange-100">
+            <h3 class="text-2xl font-bold text-center text-orange-600 mb-2">ऑनलाइन सेवा बुकिंग</h3>
+            <p class="text-center text-stone-500 text-sm mb-6">या सीधे कॉल करें: <a href="tel:6203825376" class="text-orange-600 font-bold">6203825376</a></p>
             
-            <!-- फोटो ग्रिड -->
-            <h3 class="font-bold text-lg mb-4 text-gray-700 border-l-4 border-orange-500 pl-2">नवीनतम तस्वीरें</h3>
-            <div id="photo-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                <img src="https://unsplash.com" alt="Puja" class="rounded-lg shadow object-cover h-44 w-full">
-            </div>
-
-            <!-- वीडियो ग्रिड -->
-            <h3 class="font-bold text-lg mb-4 text-gray-700 border-l-4 border-orange-500 pl-2">कथा एवं भजन वीडियो</h3>
-            <div id="video-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                    <iframe class="w-full h-52" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+            <form onsubmit="alert('आपकी बुकिंग दर्ज कर ली गई है। हमारी टीम 6203825376 से आपसे जल्द संपर्क करेगी।'); return false;">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2">आपका नाम</label>
+                    <input type="text" required class="w-full border p-2 rounded focus:outline-orange-500" placeholder="पूरा नाम दर्ज करें">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. फॉर्म्स: पुरोहित जुड़ें और जजमान इंक्वायरी -->
-    <section id="forms-section" class="py-16 bg-orange-50 border-t border-b border-orange-200">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-            
-            <!-- फॉर्म 1: पुरोहित रजिस्ट्रेशन -->
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-orange-200">
-                <h3 class="serif-font text-2xl font-bold text-orange-600 mb-2"><i class="fa-solid fa-user-plus text-yellow-500"></i> पुरोहित संघ से जुड़ें</h3>
-                <p class="text-gray-500 text-xs mb-6">देश के किसी भी हिस्से से ब्राह्मण/पुरोहित मंच का हिस्सा बनने के लिए फॉर्म भरें।</p>
-                <form onsubmit="saveForm(event, 'पुरोहित रजिस्ट्रेशन सफ़ल!')" class="space-y-4">
-                    <input type="text" required placeholder="अपना पूरा नाम" class="w-full p-2.5 border rounded-lg outline-none focus:ring-2 focus:ring-orange-400">
-                    <div class="grid grid-cols-2 gap-4">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2">मोबाइल नंबर</label>
+                    <input type="tel" required class="w-full border p-2 rounded focus:outline-orange-500" placeholder="10 अंकों का नंबर">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2">सेवा की श्रेणी चुनें</label>
+                    <select class="w-full border p-2 rounded focus:outline-orange-500">
+                        <option>ज्योतिष परामर्श</option>
+                        <option>वैदिक कर्मकांड (पूजा/अनुष्ठान)</option>
+                        <option>वास्तु शास्त्र परामर्श</option>
+                        <option>आध्यात्मिक प्रवचन</option>
