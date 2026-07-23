@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>पुरोहित सेवा - वैदिक अनुष्ठान एवं ज्योतिष परामर्श</title>
     <!-- Tailwind CSS CDN for beautiful and modern styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://tailwindcss.com"></script>
     <!-- FontAwesome for spiritual and utility icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <!-- Google Fonts for clean Hindi Typography -->
@@ -38,11 +38,11 @@
             </div>
             <div class="hidden md:flex space-x-6 font-semibold">
                 <a href="#home" class="text-amber-700 hover:text-orange-500">मुख्य पृष्ठ</a>
+                <a href="#about" class="text-gray-600 hover:text-orange-500">संस्था के बारे में</a>
                 <a href="#services" class="text-gray-600 hover:text-orange-500">हमारी सेवाएं</a>
                 <a href="#purohit-reg" class="text-gray-600 hover:text-orange-500">पुरोहित पंजीकरण</a>
                 <a href="#yajimaan-inq" class="text-gray-600 hover:text-orange-500">यजमान पूछताछ</a>
-                <a href="#knowledge-hub" class="text-gray-600 hover:text-orange-500">अध्यात्म ब्लॉग</a>
-                <a href="#donate" class="text-gray-600 hover:text-orange-500">दान करें</a>
+                <a href="#donate" class="text-gray-600 hover:text-orange-500">दान/सहयोग करें</a>
             </div>
         </div>
     </nav>
@@ -59,8 +59,32 @@
         </div>
     </header>
 
-    <!-- 4. SERVICES SECTION -->
-    <section id="services" class="max-w-7xl mx-auto px-4 py-16">
+    <!-- 4. ABOUT OUR SANSTHA SECTION -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-amber-600">
+            <h2 class="text-3xl font-bold text-amber-800 mb-6 spiritual-heading"><i class="fa-solid fa-gopuram mr-2"></i>संस्था के बारे में (About Our Sanstha)</h2>
+            <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                <strong>'पुरोहित सेवा'</strong> सनातन धर्म के मूल्यों, संस्कारों और वैदिक कर्मकांडों की शुद्धता को जीवित रखने के लिए समर्पित एक अग्रणी धार्मिक संस्था है। हमारा उद्देश्य यजमानों को योग्य, आचारवान और शास्त्र-ज्ञाता ब्राह्मणों से सीधे जोड़ना है। हम यज्ञ, अनुष्ठान, रुद्राभिषेक, महामृत्युञ्जय जप, हवन-पूजन, सुन्दरकाण्ड, रामायण कथा, भागवत कथा और गृहप्रवेश जैसे सभी संस्कार वैदिक रीति से पूरी निष्ठा के साथ संपन्न कराते हैं।
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-orange-50 p-5 rounded-xl border border-orange-200">
+                    <h4 class="font-bold text-amber-900 mb-2 text-lg"><i class="fa-solid fa-graduation-cap mr-2 text-orange-500"></i>विद्वान ब्राह्मण टीम</h4>
+                    <p class="text-gray-600 text-sm">संस्था से जुड़े सभी पुरोहित व आचार्य कर्मकांड, ज्योतिष एवं वास्तु के प्रमाणित विशेषज्ञ हैं।</p>
+                </div>
+                <div class="bg-orange-50 p-5 rounded-xl border border-orange-200">
+                    <h4 class="font-bold text-amber-900 mb-2 text-lg"><i class="fa-solid fa-certificate mr-2 text-orange-500"></i>वैदिक प्रामाणिकता</h4>
+                    <p class="text-gray-600 text-sm">बिना किसी मिलावट या भटकाव के, शास्त्रों में बताए गए नियमों और शुद्ध उच्चारण के साथ हर पूजन संपन्न होता है।</p>
+                </div>
+                <div class="bg-orange-50 p-5 rounded-xl border border-orange-200">
+                    <h4 class="font-bold text-amber-900 mb-2 text-lg"><i class="fa-solid fa-clock mr-2 text-orange-500"></i>सटीक मुहूर्त फलादेश</h4>
+                    <p class="text-gray-600 text-sm">गृहप्रवेश हो या शादी-ब्याह, संस्था द्वारा पंचांग गणना के आधार पर सर्वशुद्ध मुहूर्त निकालकर दिया जाता है।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SERVICES SECTION -->
+    <section id="services" class="max-w-7xl mx-auto px-4 py-8">
         <h2 class="text-3xl font-bold text-center text-amber-800 mb-12 spiritual-heading">धार्मिक अनुष्ठान एवं परामर्श कॉलम</h2>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <!-- Card 1 -->
@@ -90,7 +114,7 @@
         </div>
     </section>
 
-    <!-- 5. CALL TO ACTION SECTION (FORMS LINKS) -->
+    <!-- 6. CALL TO ACTION SECTION (FORMS LINKS FIXED) -->
     <section class="bg-amber-100 py-16 px-4">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
             
@@ -100,7 +124,7 @@
                     <h3 class="text-2xl font-bold text-amber-800 mb-4 spiritual-heading"><i class="fa-solid fa-user-tie mr-2"></i>पुरोहित रजिस्ट्रेशन</h3>
                     <p class="text-gray-600 mb-6">यदि आप एक वैदिक विद्वान, ज्योतिषाचार्य या कर्मकांड विशेषज्ञ ब्राह्मण हैं, तो हमसे जुड़ने के लिए अपना पंजीकरण फॉर्म भरें।</p>
                 </div>
-                <a href="https://forms.gle" target="_blank" class="w-full text-center bg-orange-600 text-white font-bold py-3 rounded-lg hover:bg-orange-700 transition block">
+                <a href="https://forms.gle" target="_blank" class="w-full text-center bg-orange-600 text-white font-bold py-3 rounded-lg hover:bg-orange-700 transition block shadow-md">
                     अभी रजिस्टर करें (गूगल फॉर्म) <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
                 </a>
             </div>
@@ -108,35 +132,3 @@
             <!-- Yajamaan Inquiry Block -->
             <div id="yajimaan-inq" class="bg-white p-8 rounded-2xl shadow-lg border border-amber-200 flex flex-col justify-between">
                 <div>
-                    <h3 class="text-2xl font-bold text-amber-800 mb-4 spiritual-heading"><i class="fa-solid fa-handshake-angle mr-2"></i>यजमान पूछताछ / पूजा बुकिंग</h3>
-                    <p class="text-gray-600 mb-6">किसी भी प्रकार के यज्ञ, विवाह, गृहप्रवेश, कथा या ज्योतिषीय परामर्श के लिए अपनी आवश्यकता और विवरण दर्ज करें।</p>
-                </div>
-                <a href="https://forms.gle" target="_blank" class="w-full text-center bg-amber-600 text-white font-bold py-3 rounded-lg hover:bg-amber-700 transition block">
-                    पूछताछ दर्ज करें (गूगल फॉर्म) <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 6. KNOWLEDGE HUB (POSTS/BLOG) -->
-    <section id="knowledge-hub" class="max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center text-amber-800 mb-12 spiritual-heading">अध्यात्म, ज्योतिष एवं वास्तु पोस्ट्स</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Post 1 -->
-            <article class="bg-white rounded-xl shadow overflow-hidden hover:shadow-md transition">
-                <div class="bg-orange-500 h-48 flex items-center justify-center text-white text-5xl"><i class="fa-solid fa-sun"></i></div>
-                <div class="p-6">
-                    <span class="text-xs font-bold text-orange-600 uppercase tracking-wide">ज्योतिष ज्ञान</span>
-                    <h3 class="text-xl font-bold my-2 text-gray-800">शुभ मुहूर्त का महत्व क्यों है?</h3>
-                    <p class="text-gray-600 text-sm mb-4">शास्त्रों के अनुसार, सही समय पर किया गया कार्य हमेशा सकारात्मक और उत्तम फल प्रदान करता है...</p>
-                    <span class="text-xs text-gray-400">जुलाई 2026</span>
-                </div>
-            </article>
-            <!-- Post 2 -->
-            <article class="bg-white rounded-xl shadow overflow-hidden hover:shadow-md transition">
-                <div class="bg-amber-500 h-48 flex items-center justify-center text-white text-5xl"><i class="fa-solid fa-house-chimney-crack"></i></div>
-                <div class="p-6">
-                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wide">वास्तु शास्त्र</span>
-                    <h3 class="text-xl font-bold my-2 text-gray-800">मुख्य द्वार के आसान वास्तु उपाय</h3>
-
