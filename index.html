@@ -3,125 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा - वैदिक अनुष्ठान एवं डिजिटल ज्योतिष मंच</title>
-    <!-- Tailwind CSS for Ultra-Modern Digital Layout -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome for Premium Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Premium Google Fonts for Hindi & Sanskrit Verses -->
-    <link href="https://googleapis.com" rel="stylesheet">
+    <title>पुरोहित सेवा - वैदिक अनुष्ठान एवं ज्योतिष संस्था</title>
     <style>
-        body { font-family: 'Tiro Devanagari Hindi', serif; }
-        .spiritual-font { font-family: 'Rozha One', serif; }
-        .hero-bg {
-            background-image: linear-gradient(rgba(180, 83, 9, 0.85), rgba(220, 38, 38, 0.85)), url('https://unsplash.com');
+        /* सात्विक एवं पारंपरिक आध्यात्मिक रंग थीम */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fffaf0;
+            color: #333333;
+        }
+
+        /* टॉप हेडर बार */
+        .top-bar {
+            background-color: #b45309;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .top-bar a {
+            color: #fef08a;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* मुख्य नेविगेशन */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 5px solid #d97706;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #9a3412;
+        }
+        .nav-links a {
+            color: #7c2d12;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .nav-links a:hover {
+            color: #ea580c;
+        }
+
+        /* मुख्य बैनर (Hero Section) - लाइव बैकग्राउंड फोटो के साथ */
+        .hero {
+            background-image: linear-gradient(rgba(154, 52, 18, 0.85), rgba(217, 119, 6, 0.85)), url('https://unsplash.com');
             background-size: cover;
             background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #fef08a;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        /* फॉर्म्स की मुख्य बटनें */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn-purohit {
+            background-color: #ea580c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .btn-purohit:hover {
+            background-color: #c2410c;
+        }
+        .btn-yajaman {
+            background-color: #7c2d12;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .btn-yajaman:hover {
+            background-color: #451a03;
+        }
+
+        /* संस्था परिचय एवं फोटो कॉलम */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .about-section {
+            background-color: #ffffff;
+            border-left: 8px solid #b45309;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+        .about-text {
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-text h2 {
+            color: #7c2d12;
+            margin-top: 0;
+            font-size: 28px;
+            border-bottom: 2px solid #fed7aa;
+            padding-bottom: 10px;
+        }
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #444444;
+        }
+        .about-img {
+            flex: 1;
+            min-width: 300px;
+            background-image: url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            min-height: 350px;
+        }
+
+        /* धार्मिक सेवाएं/स्तम्भ ग्रिड */
+        .services-title {
+            text-align: center;
+            color: #7c2d12;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #ea580c;
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            height: 150px;
+            object-cover: cover;
+            object-position: center;
+        }
+        .service-card h3 {
+            color: #7c2d12;
+            font-size: 20px;
+            margin: 15px 0 10px 0;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #666666;
+            padding: 0 15px 20px 15px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* विशेष दान एवं सहयोग कॉलम */
+        .donation-box {
+            background-color: #7c2d12;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            margin-bottom: 60px;
+        }
+        .donation-box h2 {
+            color: #fef08a;
+            font-size: 32px;
+            margin-top: 0;
+        }
+        .donation-box p {
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        .donation-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .donate-col {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+        }
+        .donate-col h4 {
+            color: #fef08a;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .btn-donate-qr {
+            background-color: #eab308;
+            color: #451a03;
+            padding: 12px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-donate-qr:hover {
+            background-color: #fde047;
+        }
+        .btn-whatsapp-chat {
+            background-color: #22c55e;
+            color: white;
+            padding: 12px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-whatsapp-chat:hover {
+            background-color: #16a34a;
+        }
+
+        /* पादलेख (Footer) */
+        .footer {
+            background-color: #1c1917;
+            color: #a8a29e;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 5px solid #b45309;
+        }
+        .footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #f59e0b;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 22px;
+        }
+
+        /* फ्लोटिंग व्हाट्सएप बटन */
+        .floating-ws {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #22c55e;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 999;
         }
     </style>
 </head>
-<body class="bg-stone-50 text-gray-900 antialiased">
+<body>
 
-    <!-- 1. DIGITAL TOP BAR (All Fixed Active Channels) -->
-    <div class="bg-amber-800 text-white text-xs sm:text-sm py-2 px-4 shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex flex-wrap justify-center items-center gap-4">
-                <span class="bg-yellow-400 text-amber-950 px-2.5 py-0.5 rounded-full font-black text-xs tracking-wider uppercase">डिजिटल पोर्टल</span>
-                <!-- FIXED WHATSAPP CHANNEL LINK -->
-                <a href="https://whatsapp.com" target="_blank" class="hover:text-green-300 transition flex items-center gap-1 font-bold">
-                    <i class="fa-brands fa-whatsapp text-base text-green-400"></i> व्हाट्सएप चैनल से जुड़ें
-                </a>
-            </div>
-            <div class="flex items-center gap-4 font-semibold">
-                <span><i class="fa-solid fa-phone text-yellow-400 mr-1"></i> संपर्क: +91 6203825376</span>
-                <div class="h-4 w-px bg-amber-600 hidden sm:block"></div>
-                <div class="flex gap-4">
-                    <!-- FIXED FACEBOOK LINK -->
-                    <a href="https://facebook.com" target="_blank" class="hover:text-blue-300 text-base" title="फेसबुक पेज"><i class="fa-brands fa-facebook"></i></a>
-                    <!-- FIXED GOOGLE SHEET LINK -->
-                    <a href="https://google.com" target="_blank" class="hover:text-green-300 text-base" title="पंजीकृत पुरोहित सूची (गूगल शीट)"><i class="fa-solid fa-file-excel"></i></a>
-                </div>
-            </div>
-        </div>
+    <!-- 1. टॉप बार (सत्यापित सीधे चैनल्स) -->
+    <div class="top-bar">
+        <span>संपर्क सूत्र: +91 6203825376</span> | 
+        <a href="https://whatsapp.com" target="_blank">आधिकारिक व्हाट्सएप चैनल से जुड़ें</a> | 
+        <a href="https://google.com" target="_blank">पंजीकृत पुरोहित सूची (गूगल शीट)</a>
     </div>
 
-    <!-- 2. BRANDING & PREMIUM NAVIGATION BAR -->
-    <nav class="bg-white/95 backdrop-blur border-b-4 border-amber-600 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="bg-gradient-to-br from-amber-600 to-red-600 text-white p-2.5 rounded-2xl text-xl shadow-md">
-                    <i class="fa-solid fa-om"></i>
-                </div>
-                <div>
-                    <span class="text-2xl md:text-3xl font-black text-amber-900 block spiritual-font tracking-wide">पुरोहित सेवा</span>
-                    <span class="text-xs text-red-600 block font-bold tracking-widest mt-[-2px]">वैदिकं कर्म च अध्यात्मम्</span>
-                </div>
-            </div>
-            <div class="hidden lg:flex items-center gap-6 font-extrabold text-amber-950 text-sm tracking-wide">
-                <a href="#home" class="hover:text-red-600 transition">मुख्य पृष्ठ</a>
-                <a href="#about" class="hover:text-red-600 transition">संस्था परिचय</a>
-                <a href="#services-columns" class="hover:text-red-600 transition">सेवा स्तम्भ</a>
-                <a href="#portal-section" class="bg-orange-100 text-orange-800 px-3 py-1.5 rounded-lg hover:bg-orange-200 transition">डिजिटल फॉर्म्स</a>
-                <a href="#donation-box" class="bg-gradient-to-r from-amber-600 to-red-600 text-white px-5 py-2.5 rounded-xl hover:opacity-90 transition shadow-md flex items-center gap-1.5"><i class="fa-solid fa-heart-circle-check"></i> दान/सहयोग</a>
-            </div>
+    <!-- 2. मुख्य ब्रांडिंग नेविगेशन -->
+    <nav class="navbar">
+        <div class="logo">ॐ पुरोहित सेवा</div>
+        <div class="nav-links">
+            <a href="#home">मुख्य पृष्ठ</a>
+            <a href="#about">संस्था परिचय</a>
+            <a href="#services">सेवा स्तम्भ</a>
+            <a href="#donation">दान/सहयोग कॉलम</a>
         </div>
     </nav>
 
-    <!-- 3. HERO BANNER WITH SPIRITUAL HD BACKGROUND WALLPAPER -->
-    <header id="home" class="hero-bg text-white py-20 md:py-28 px-4 text-center relative shadow-2xl">
-        <div class="max-w-4xl mx-auto relative z-10">
-            <span class="inline-block bg-white/20 backdrop-blur-sm text-yellow-300 font-bold px-4 py-1.5 rounded-full text-xs md:text-sm mb-4 tracking-wider uppercase border border-white/10">शुद्धता • प्रामाणिकता • परंपरा</span>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 text-yellow-100 spiritual-font drop-shadow-lg leading-tight">संस्कार और तकनीक का डिजिटल संगम</h1>
-            <p class="text-lg md:text-xl mb-10 text-orange-50 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">समस्त यज्ञ, अनुष्ठान, कुण्डली निर्माण एवं वास्तु फलादेश हेतु वैदिक विद्वान ब्राह्मणों को खोजने और उनसे सीधे संपर्क करने का आधुनिक मंच।</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#portal-section" class="bg-yellow-400 text-amber-950 font-black text-base px-8 py-4 rounded-xl shadow-xl hover:bg-yellow-300 transition transform hover:-translate-y-0.5 flex items-center gap-2">
-                    <i class="fa-solid fa-user-check"></i> पुरोहित रजिस्ट्रेशन फॉर्म
-                </a>
-                <a href="#portal-section" class="bg-stone-900 text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl hover:bg-stone-800 transition transform hover:-translate-y-0.5 flex items-center gap-2 border border-stone-700">
-                    <i class="fa-solid fa-calendar-days"></i> यजमान इंक्वायरी फॉर्म
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- 4. ABOUT OUR SANSTHA SECTION WITH HD PHOTO -->
-    <section id="about" class="max-w-6xl mx-auto px-4 py-16">
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-stretch border border-stone-200">
-            <!-- Left Side Text Column -->
-            <div class="p-8 md:p-12 md:col-span-7 flex flex-col justify-center border-b md:border-b-0 md:border-r border-stone-100">
-                <span class="text-xs font-black tracking-widest text-red-600 uppercase mb-2">विश्वसनीय धार्मिक संकल्प</span>
-                <h2 class="text-3xl font-bold text-amber-950 mb-6 spiritual-font flex items-center gap-2"><i class="fa-solid fa-gopuram text-orange-500"></i>संस्था का परिचय एवं लक्ष्य</h2>
-                <div class="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
-                    <p>
-                        <strong>'पुरोहित सेवा'</strong> केवल एक वेबसाइट नहीं, बल्कि सनातन संस्कृति के गौरव, वैदिक ऋचाओं की शुद्धता और आचारवान ब्राह्मणों के मान-सम्मान को समर्पित एक सुव्यवस्थित डिजिटल संस्था है। इसका मुख्य उद्देश्य यजमानों को योग्य, सदाचारी और शास्त्र-ज्ञाता पुरोहितों से सीधे जोड़ना है।
-                    </p>
-                    <p>
-                        आज की व्यस्त जीवनशैली में सही मुहूर्त की गणना, शुद्ध उच्चारण के साथ यज्ञ, और भटकाव रहित वास्तु परामर्श मिलना कठिन हो गया है। हमारी संस्था पंचांग सम्मत सर्वशुद्ध गणना के साथ यज्ञ-अनुष्ठान, रुद्राभिषेक, महामृत्युञ्जय जप, सुन्दरकाण्ड, रामायण व भागवत कथा जैसे समस्त धार्मिक आयोजनों को पूर्ण प्रामाणिकता से संपन्न कराने हेतु प्रतिबद्ध है।
-                    </p>
-                </div>
-            </div>
-            <!-- Right Side Image Column (HD Spiritual Photo Integration) -->
-            <div class="md:col-span-5 relative min-h-[300px] bg-amber-900">
-                <img src="https://unsplash.com" alt="वैदिक अनुष्ठान एवं प्रार्थना" class="absolute inset-0 w-full h-full object-cover opacity-95">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                    <p class="text-white text-sm font-serif italic drop-shadow">"मंत्रहीनं क्रियाहीनं भक्तिहीनं सुरेश्वर, यत्पूजितं मया देव परिपूर्णं तदस्तु मे।"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. CATEGORIZED MODERN DIGITAL COLUMNS WITH LIVE HIGH-QUALITY PHOTOS -->
-    <section id="services-columns" class="bg-stone-100 py-16 border-y border-stone-200 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-3 spiritual-font">हमारी धार्मिक सेवाएं एवं डिजिटल स्तम्भ</h2>
-                <div class="h-1 w-20 bg-orange-600 mx-auto rounded-full"></div>
-                <p class="text-gray-600 mt-3 text-sm md:text-base">शास्त्रोक्त पद्धतियों के आधार पर विभाजित हमारे चार मुख्य आध्यात्मिक प्रभाग।</p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1: Jyotish -->
-                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
-                    <img src="https://unsplash.com" alt="ज्योतिष" class="h-40 w-full object-cover">
-                    <div class="p-5 flex-grow">
-                        <h3 class="text-lg font-black text-amber-950 mb-2 border-b pb-1"><i class="fa-solid fa-star-of-david text-orange-500 mr-1.5"></i>ज्योतिष व कुण्डली</h3>
+    <!-- 3. मुख्य आध्यात्मिक बैनर एवं सटीक फॉर्म लिंक्स -->
+    <header id="home" class="hero">
+        <h1>वैदिक एवं प्रामाणिक पुरोहित सेवा</h1>
+        <p>सनातन धर्म के समस्त यज्ञ-अनुष्ठान, गृह प्रवेश पूजा, कुण्डली निर्माण एवं सर्वशुद्ध मुहूर्त गणना हेतु श्रेष्ठ एवं सदाचारी ब्राह्मणों से सीधे जुड़ने का डिजिटल मंच।</p>
+        
+        <div class="btn-container">
+            <!-- 100% सही किया हुआ पुरोहित फॉर्म लिंक -->
