@@ -3,147 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा - सनातन वैदिक प्रबंधन</title>
-    <script src="https://tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>पुरोहित सेवा - आचार्य रंजय दुबे</title>
+    <style>
+        /* 🕉️ प्रीमियम सनातन एवं दिव्य थीम */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin:0; padding:0; 
+            background-color: #fff8f2; 
+            color: #2c1a04; 
+        }
+        /* भव्य हेडर */
+        header { 
+            background: linear-gradient(135deg, #e64a19, #8b0000); 
+            color: #fff; 
+            text-align: center; 
+            padding: 50px 20px; 
+            border-bottom: 5px solid #ffcc00;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        header h1 { margin: 0; font-size: 42px; text-shadow: 3px 3px 6px rgba(0,0,0,0.4); font-weight: bold; }
+        header p { font-size: 20px; margin-top: 12px; color: #ffcc00; font-style: italic; }
+        
+        .container { max-width: 950px; margin: 30px auto; padding: 20px; }
+        
+        /* प्रीमियम कार्ड्स */
+        .card { 
+            background: #ffffff; 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-radius: 16px; 
+            border-top: 4px solid #e64a19;
+            box-shadow: 0 6px 18px rgba(139,0,0,0.06); 
+        }
+        h2 { color: #8b0000; margin-top: 0; border-bottom: 2px solid #ffd8b3; padding-bottom: 12px; font-size: 24px; }
+        
+        /* 🤝 बटन्स */
+        .flex-buttons { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .action-btn { 
+            flex: 1; min-width: 260px; text-align: center; 
+            color: white; padding: 18px; text-decoration: none; 
+            font-size: 18px; font-weight: bold; border-radius: 50px; 
+            box-shadow: 0 4px 12px rgba(230,74,25,0.3); transition: 0.3s; 
+        }
+        .action-btn.jajman { background: linear-gradient(90deg, #ff4500, #ff8c00); }
+        .action-btn.purohit { background: linear-gradient(90deg, #8b0000, #b22222); }
+        .action-btn:hover { transform: scale(1.03); box-shadow: 0 6px 18px rgba(0,0,0,0.2); }
+
+        /* 🔗 सोशल मीडिया ग्रिड */
+        .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 15px; }
+        .social-icon { text-align: center; padding: 14px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold; font-size: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.2s; }
+        .social-icon:hover { opacity: 0.9; transform: translateY(-2px); }
+        .fb { background: #3b5998; } .wa-ch { background: #00a884; } .wa { background: #25d366; }
+
+        /* 📰 डायनामिक कंटेंट */
+        .dynamic-item { background: #fffaf5; padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #ffebd6; }
+        .dynamic-item h3 { margin: 0 0 12px 0; color: #e64a19; font-size: 22px; }
+        
+        footer { text-align: center; padding: 30px; background-color: #1a0f02; color: #ffcc00; margin-top: 60px; font-weight: bold; border-top: 4px solid #e64a19; }
+    </style>
 </head>
-<body class="bg-amber-50 text-stone-800 font-sans">
+<body>
 
-    <!-- Top Contact Bar -->
-    <div class="bg-amber-500 text-stone-900 py-1.5 px-4 text-center font-bold text-sm flex justify-center items-center gap-4">
-        <span><i class="fa-solid fa-phone"></i> संपर्क सूत्र: <a href="tel:6203825376" class="underline">6203825376</a></span>
-        <span class="hidden sm:inline">|</span>
-        <a href="https://wa.me" target="_blank" class="bg-emerald-600 text-white px-2 py-0.5 rounded hover:bg-emerald-700 transition flex items-center gap-1">
-            <i class="fa-brands fa-whatsapp"></i> व्हाट्सएप करें
-        </a>
-    </div>
-
-    <!-- Header Navigation -->
-    <header class="bg-orange-600 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <span class="text-3xl">🔱</span>
-                <h1 class="text-2xl font-bold tracking-wide">पुरोहित सेवा</h1>
-            </div>
-            <nav class="hidden md:flex space-x-6 font-medium">
-                <a href="#categories" class="hover:text-amber-200 transition">श्रेणियाँ</a>
-                <a href="#purohits" class="hover:text-amber-200 transition">पुरोहित जुड़ें</a>
-                <a href="#booking" class="hover:text-amber-200 transition">बुकिंग</a>
-                <a href="#donation" class="hover:text-amber-200 transition">दान करे</a>
-            </nav>
-            <a href="tel:6203825376" class="bg-white text-orange-600 px-4 py-2 rounded-full font-bold hover:bg-amber-100 transition text-sm flex items-center gap-2">
-                <i class="fa-solid fa-phone-flip"></i> कॉल करें
-            </a>
-        </div>
+    <!-- हेडर मंडल -->
+    <header>
+        <h1>।। पुरोहित सेवा ।।</h1>
+        <p>🚩 आचार्य रंजय दुबे - शुद्ध एवं प्रामाणिक वैदिक सेवा मंच 🚩</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-orange-500 to-amber-600 text-white py-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">शुद्ध वैदिक एवं प्रामाणिक पुरोहित सेवा</h2>
-            <p class="text-lg md:text-xl mb-6 opacity-90">घर बैठे अनुभवी विद्वानों से ज्योतिष, कर्मकांड, वास्तु परामर्श और आध्यात्मिक मार्गदर्शन प्राप्त करें।</p>
-            <p class="text-2xl font-bold text-amber-200 mb-8 flex justify-center items-center gap-2">
-                <i class="fa-solid fa-headset"></i> तुरंत बुकिंग हेतु संपर्क: 6203825376
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#booking" class="bg-white text-orange-600 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-stone-100 transition">ऑनलाइन बुक करें</a>
-                <a href="tel:6203825376" class="bg-amber-400 text-stone-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-amber-300 transition">सीधे बात करें</a>
+    <div class="container">
+
+        <!-- 📸 मुख्य दिव्य बैनर चित्र -->
+        <div class="card" style="padding: 10px; border: none;">
+            <img src="https://prodia.xyz" alt="पुरोहित सेवा दिव्य दर्शन" style="width: 100%; border-radius: 12px; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        </div>
+
+        <!-- 🤝 फॉर्म जुड़ाव केंद्र -->
+        <div class="card" style="border-top-color: #28a745;">
+            <h2>🤝 डिजिटल पंजीकरण एवं सेवा बुकिंग</h2>
+            <p>नीचे दिए गए बटनों पर क्लिक करके यजमान सीधे पूजा बुक कर सकते हैं और नए पुरोहित ब्राह्मण हमसे जुड़ सकते हैं:</p>
+            <div class="flex-buttons">
+                <a href="https://forms.gle/HmjP3gRVgkHsbive7" target="_blank" class="action-btn jajman">🕉️ नए यजमान: कथा/पूजा बुक करें</a>
+                <a href="https://forms.gle/jm1upPkErGHtMkeb9" target="_blank" class="action-btn purohit">🪪 नए पुरोहित: ब्राह्मण पंजीकरण फॉर्म</a>
             </div>
         </div>
-    </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="container mx-auto px-4 py-16">
-        <h3 class="text-3xl font-bold text-center text-orange-700 mb-12 relative">
-            मुख्य श्रेणियाँ
-            <span class="block w-20 h-1 bg-amber-500 mx-auto mt-2"></span>
-        </h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Category 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
-                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-star-and-crescent"></i></div>
-                <h4 class="text-xl font-bold mb-2">ज्योतिष परामर्श</h4>
-                <p class="text-stone-600 text-sm mb-4">कुंडली विश्लेषण, ग्रह शांति, गुण मिलान और भविष्यफल की सटीक गणना।</p>
-                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
-            </div>
-
-            <!-- Category 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
-                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-fire-burner"></i></div>
-                <h4 class="text-xl font-bold mb-2">वैदिक कर्मकांड</h4>
-                <p class="text-stone-600 text-sm mb-4">रुद्राभिषेक, सत्यनारायण कथा, गृह प्रवेश, मुंडन एवं समस्त संस्कार पूजन।</p>
-                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
-            </div>
-
-            <!-- Category 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
-                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-compass"></i></div>
-                <h4 class="text-xl font-bold mb-2">वास्तु शास्त्र</h4>
-                <p class="text-stone-600 text-sm mb-4">आवासीय और व्यावसायिक भूमि/भवन का वास्तु निरीक्षण एवं दोष निवारण।</p>
-                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
-            </div>
-
-            <!-- Category 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
-                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-om"></i></div>
-                <h4 class="text-xl font-bold mb-2">अध्यात्म व प्रवचन</h4>
-                <p class="text-stone-600 text-sm mb-4">श्रीमद्भागवत कथा, सत्संग, ध्यान-साधना और मानसिक शांति हेतु मार्गदर्शन।</p>
-                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
-            </div>
-
-            <!-- Category 5 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition">
-                <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-heart-pulse"></i></div>
-                <h4 class="text-xl font-bold mb-2">वैदिक स्वास्थ्य</h4>
-                <p class="text-stone-600 text-sm mb-4">यज्ञ थेरेपी (मंत्र चिकित्सा), योग, आयुर्वेद और प्राकृतिक जीवन शैली के उपाय।</p>
-                <a href="#booking" class="text-orange-600 font-semibold text-sm hover:underline">बुक करें →</a>
-            </div>
-
-            <!-- Category 6 -->
-            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-500 hover:shadow-xl transition">
-                <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-hands-praying"></i></div>
-                <h4 class="text-xl font-bold mb-2">दान करे</h4>
-                <p class="text-stone-600 text-sm mb-4">निर्धन पुरोहितों की शिक्षा, चिकित्सा, गौ-सेवा और वेद पाठशालाओं के लिए सहयोग।</p>
-                <a href="#donation" class="text-amber-600 font-semibold text-sm hover:underline">सहयोग करें →</a>
+        <!-- 🔗 सोशल मीडिया संपर्क -->
+        <div class="card" style="border-top-color: #ffcc00;">
+            <h2>🔗 हमारे आधिकारिक माध्यमों से जुड़ें</h2>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/share/1DFfSsMHan/" target="_blank" class="social-icon fb">फेसबुक पेज</a>
+                <a href="https://whatsapp.com/channel/0029VbD2WhKBVJkzHDqEfp1s" target="_blank" class="social-icon wa-ch">व्हाट्सएप चैनल</a>
+                <a href="https://wa.me" target="_blank" class="social-icon wa">व्हाट्सएप चैट</a>
             </div>
         </div>
-    </section>
 
-    <!-- Purohit Registration Info (पुरोहित जुड़ें) -->
-    <section id="purohits" class="bg-orange-100 py-16 px-4 text-center">
-        <div class="max-w-2xl mx-auto">
-            <h3 class="text-3xl font-bold text-orange-800 mb-4">नए पुरोहित हमसे जुड़ें</h3>
-            <p class="text-stone-700 mb-6">यदि आप कर्मकांड, ज्योतिष, वास्तु या अध्यात्म के ज्ञाता हैं और इस सेवा पोर्टल से जुड़ना चाहते हैं, तो कृपया नीचे दिए गए नंबर पर अपना विवरण भेजें।</p>
-            <div class="inline-block bg-white p-4 rounded-xl shadow-md border border-orange-200">
-                <p class="font-bold text-lg text-stone-800 mb-2">पंजीकरण के लिए संपर्क करें:</p>
-                <a href="tel:6203825376" class="text-2xl font-extrabold text-orange-600 hover:underline block">6203825376</a>
-                <a href="https://wa.me?text=प्रणाम,%20मैं%20पुरोहित%20सेवा%20पोर्टल%20से%20जुड़ना%20चाहता%20हूँ।" target="_blank" class="mt-2 inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-emerald-700 transition">
-                    <i class="fa-brands fa-whatsapp"></i> व्हाट्सएप पर विवरण भेजें
-                </a>
-            </div>
+        <!-- 📰 नित्य लेख (गूगल शीट से लाइव) -->
+        <div class="card">
+            <h2>📰 नित्य धार्मिक लेख एवं ज्ञान विज्ञान</h2>
+            <div id="articles-container">पंचांग और लेख लोड हो रहे हैं...</div>
         </div>
-    </section>
 
-    <!-- Booking Form Section -->
-    <section id="booking" class="container mx-auto px-4 py-16 max-w-2xl">
-        <div class="bg-white rounded-2xl shadow-xl p-8 border border-orange-100">
-            <h3 class="text-2xl font-bold text-center text-orange-600 mb-2">ऑनलाइन सेवा बुकिंग</h3>
-            <p class="text-center text-stone-500 text-sm mb-6">या सीधे कॉल करें: <a href="tel:6203825376" class="text-orange-600 font-bold">6203825376</a></p>
-            
-            <form onsubmit="alert('आपकी बुकिंग दर्ज कर ली गई है। हमारी टीम 6203825376 से आपसे जल्द संपर्क करेगी।'); return false;">
-                <div class="mb-4">
-                    <label class="block text-sm font-semibold mb-2">आपका नाम</label>
-                    <input type="text" required class="w-full border p-2 rounded focus:outline-orange-500" placeholder="पूरा नाम दर्ज करें">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-sm font-semibold mb-2">मोबाइल नंबर</label>
-                    <input type="tel" required class="w-full border p-2 rounded focus:outline-orange-500" placeholder="10 अंकों का नंबर">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-sm font-semibold mb-2">सेवा की श्रेणी चुनें</label>
-                    <select class="w-full border p-2 rounded focus:outline-orange-500">
-                        <option>ज्योतिष परामर्श</option>
-                        <option>वैदिक कर्मकांड (पूजा/अनुष्ठान)</option>
-                        <option>वास्तु शास्त्र परामर्श</option>
-                        <option>आध्यात्मिक प्रवचन</option>
+    </div>
+
+    <footer>
+        <p>🙏 © 2026 पुरोहित सेवा मंच। सनातन धर्म की जय हो। 🙏</p>
+    </footer>
+
+    <!-- 🧠 जादुई स्क्रिप्ट जो आपकी शीट से डेटा लोड करेगी -->
+    <script>
+        const sheetId = '1P7YuLUPuU1Bu0n7pzH3eF_xXvt2HNEUkIDCcFk5pJWU'; 
+        const base = `https://google.com{sheetId}/gviz/tq?tqx=out:json`;
+
+        fetch(base)
+            .then(res => res.text())
+            .then(data => {
+                const json = JSON.parse(data.substr(47).slice(0, -2));
+                const rows = json.table.rows;
+                
+                let articlesHTML = '';
+
+                rows.forEach(row => {
+                    if (row.c && row.c[0] && row.c[1] && row.c[2]) {
+                        const serviceType = row.c[0].v;
+                        const title = row.c[1].v;
+                        const content = row.c[2].v;
+                        const date = row.c[3] ? row.c[3].v : '';
+
+                        articlesHTML += `
+                            <div class="dynamic-item">
+                                <h3>${serviceType} - ${title} <span style="font-size:13px; color:#c94c0c; float:right;">📅 ${date}</span></h3>
+                                <p style="white-space: pre-wrap; line-height:1.7; font-size:16px; margin-top:10px;">${content}</p>
+                            </div>`;
+                    }
+                });
+
+                document.getElementById('articles-container').innerHTML = articlesHTML || '<p>अभी कोई लेख उपलब्ध नहीं है।</p>';
+            })
+            .catch(err => {
+                document.getElementById('articles-container').innerHTML = 'डेटा लोड करने में समस्या आई। कृपया सुनिश्चित करें कि गूगल शीट "Anyone with link" पर सेट है।';
+            });
+    </script>
+</body>
+</html>
