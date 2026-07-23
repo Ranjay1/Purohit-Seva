@@ -3,143 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा</title>
+    <title>पुरोहित सेवा - वैदिक धार्मिक अनुष्ठान</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
+        :root {
+            --primary-color: #E65100; /* गहरा केसरिया */
+            --secondary-color: #FF8F00; /* गेंदा पीला */
+            --dark-amber: #5D4037; /* आध्यात्मिक भूरा */
+            --bg-light: #FFFDE7; /* हल्का पीला बैकग्राउंड */
+            --text-dark: #212121;
+        }
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
-            background-color: #fcf8f2;
-            color: #333;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
             line-height: 1.6;
-            padding: 20px;
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-            border-top: 8px solid #ff6f00;
-        }
-        .header {
-            background: linear-gradient(135deg, #ff6f00, #ff9100);
+
+        /* हेडर और बैनर */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 4rem 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border-bottom: 6px solid #FFD54F;
         }
-        .header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* हमारी सेवाएँ सेक्शन */
+        .services-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+            border-top: 6px solid var(--primary-color);
+        }
+
+        .services-section h2 {
+            color: var(--dark-amber);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .service-item {
+            background: #FFF3E0;
+            padding: 1.2rem;
+            border-radius: 10px;
+            text-align: center;
             font-weight: bold;
+            color: var(--dark-amber);
+            border: 1px solid #FFE082;
+            transition: all 0.3s ease;
         }
-        .header p {
-            font-size: 16px;
-            opacity: 0.9;
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            background: #FFE082;
+            box-shadow: 0 5px 15px rgba(230,81,0,0.15);
         }
-        .content {
-            padding: 25px 20px;
+
+        /* लिंक्स और बटन्स ग्रिड */
+        .links-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
         }
-        .services {
-            background: #fff3e0;
-            border-left: 4px solid #ff6f00;
-            padding: 15px;
-            margin-bottom: 25px;
-            border-radius: 4px;
-            font-size: 15px;
-            text-align: justify;
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s;
         }
-        .section-title {
-            font-size: 18px;
-            color: #ff6f00;
-            margin-bottom: 15px;
-            font-weight: bold;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+
+        .card:hover {
+            transform: translateY(-3px);
         }
+
+        .card h3 {
+            margin: 1.2rem 0;
+            color: var(--dark-amber);
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #616161;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* बटन स्टाइल्स */
         .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.9rem 1.8rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(230,81,0,0.2);
+        }
+
+        .btn:hover {
+            background: #BF360C;
+            transform: scale(1.02);
+        }
+
+        .btn-sheet { background: #2E7D32; box-shadow: 0 4px 10px rgba(46,125,50,0.2); }
+        .btn-sheet:hover { background: #1B5E20; }
+        
+        .social-box {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .btn-fb { background: #1877F2; box-shadow: 0 4px 10px rgba(24,119,242,0.2); }
+        .btn-fb:hover { background: #115293; }
+        
+        .btn-wa { background: #25D366; box-shadow: 0 4px 10px rgba(37,211,102,0.2); }
+        .btn-wa:hover { background: #128C7E; }
+
+        /* पेमेंट सेक्शन */
+        .payment-section {
+            background: #FFF8E1;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 2px dashed var(--primary-color);
+        }
+
+        .payment-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .qr-container {
+            width: 220px;
+            height: 220px;
+            margin: 1.5rem auto;
+            background: white;
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ff6f00;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .qr-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* फुटर */
+        footer {
+            background: var(--dark-amber);
             color: white;
-            text-decoration: none;
-            padding: 12px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background 0.3s;
             text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
         }
-        .btn:hover {
-            background-color: #e65100;
+
+        footer p {
+            margin-bottom: 0.6rem;
         }
-        .btn-google { background-color: #4285F4; }
-        .btn-google:hover { background-color: #357ae8; }
-        .btn-form { background-color: #673ab7; }
-        .btn-form:hover { background-color: #5e35b1; }
-        .btn-fb { background-color: #3b5998; }
-        .btn-fb:hover { background-color: #2d4373; }
-        .btn-wa { background-color: #25D366; }
-        .btn-wa:hover { background-color: #128C7E; }
-        .btn-upi { background-color: #00796b; }
-        .btn-upi:hover { background-color: #004d40; }
 
         .contact-info {
-            text-align: center;
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-            font-size: 16px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #FFD54F;
+            margin: 1rem 0;
         }
-        .contact-info strong {
-            color: #ff6f00;
+
+        @media (max-width: 768px) {
+            header { padding: 3rem 1rem; }
+            header h1 { font-size: 2.2rem; }
+            .container { margin: 1.5rem auto; }
+            .services-section { padding: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
     <!-- मुख्य हेडर -->
-    <div class="header">
-        <h1>जय श्री राम | पुरोहित सेवा</h1>
-        <p>वैदिक रीति-रिवाज से धार्मिक अनुष्ठान</p>
-    </div>
+    <header>
+        <h1>✨ पुरोहित सेवा (Purohit Seva) ✨</h1>
+        <p>विश्वसनीय, अनुभवी एवं विद्वान आचार्यों द्वारा संपूर्ण वैदिक अनुष्ठान</p>
+    </header>
 
-    <div class="content">
-        <!-- सेवाओं की सूची -->
-        <div class="services">
-            <strong>हमारे यहाँ:</strong> यज्ञ, अनुष्ठान, रुद्राभिषेक, महामृत्युञ्जय जप, हवन-पूजन, सुन्दरकाण्ड, रामायण कथा, भागवत, गृहप्रवेश, शादी-ब्याह, वास्तुपूजन, दुर्गा पूजा, शतचंडी महायज्ञ, और प्राण प्रतिष्ठा जैसे सभी धार्मिक अनुष्ठान वैदिक रूप से सम्पन्न होते हैं।
-        </div>
+    <div class="container">
+        
+        <!-- धार्मिक सेवाएं -->
+        <section class="services-section">
+            <h2>🔱 हमारी वैदिक सेवाएँ 🔱</h2>
+            <div class="services-grid">
+                <div class="service-item"><i class="fa-solid fa-om"></i> यज्ञ एवं अनुष्ठान</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> रुद्राभिषेक पाठ</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> महामृत्युञ्जय जप</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> हवन-पूजन</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> सुन्दरकाण्ड पाठ</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> अखण्ड रामायण</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> श्रीमद्भागवत कथा</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> गृहप्रवेश पूजन</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> शादी-ब्याह संस्कार</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> वास्तुपूजन</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> दुर्गा पूजा</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> शतचंडी महायज्ञ</div>
+                <div class="service-item"><i class="fa-solid fa-om"></i> मूर्ति प्राण प्रतिष्ठा</div>
+            </div>
+        </section>
 
         <!-- महत्वपूर्ण लिंक्स -->
-        <div class="section-title">महत्वपूर्ण लिंक्स व फॉर्म</div>
-        
-        <a href="https://forms.gle/HmjP3gRVgkHsbive7" target="_blank" class="btn btn-form">📋 यजमान / इनक्वायरी फॉर्म भरें</a>
-        <a href="https://forms.gle" target="_blank" class="btn btn-form">📿 पुरोहित रजिस्ट्रेशन फॉर्म</a>
-        <a href="https://google.com" target="_blank" class="btn btn-google">📊 गूगल शीट (डेटा देखें)</a>
+        <section class="links-section">
+            
+            <!-- यजमान कार्ड -->
+            <div class="card">
+                <div>
+                    <i class="fa-solid fa-hands-praying" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3>इनक्वायरी / यजमान</h3>
+                    <p>यदि आप अपने घर, दुकान या कार्यालय में किसी भी प्रकार की पूजा या कथा आयोजित करना चाहते हैं, तो यहाँ विवरण दर्ज करें।</p>
+                </div>
+                <a href="https://forms.gle" target="_blank" class="btn">पूछताछ फॉर्म खोलें</a>
+            </div>
 
-        <!-- सोशल मीडिया लिंक्स -->
-        <div class="section-title" style="margin-top: 20px;">हमारे साथ जुड़ें</div>
-        
-        <a href="https://whatsapp.com" target="_blank" class="btn btn-wa">💬 व्हाट्सएप चैनल जॉइन करें</a>
-        <a href="https://facebook.com" target="_blank" class="btn btn-fb">🌐 फेसबुक पेज पर जाएँ</a>
+            <!-- पुरोहित कार्ड -->
+            <div class="card">
+                <div>
+                    <i class="fa-solid fa-graduation-cap" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3>पुरोहित रजिस्ट्रेशन</h3>
+                    <p>यदि आप एक योग्य कर्मकांडी पंडित या आचार्य हैं और हमारी संस्था 'पुरोहित सेवा' से जुड़ना चाहते हैं, तो अपना पंजीकरण करें।</p>
+                </div>
+                <a href="https://forms.gle" target="_blank" class="btn">रजिस्ट्रेशन फॉर्म खोलें</a>
+            </div>
 
-        <!-- दान और सहयोग -->
-        <div class="section-title" style="margin-top: 20px;">सहयोग व दान</div>
-        <a href="upi://pay?pa=6203825376@upi&pn=Purohit%20Seva" class="btn btn-upi">🙏 UPI द्वारा दान करें (6203825376@upi)</a>
+            <!-- गूगल शीट कार्ड -->
+            <div class="card">
+                <div>
+                    <i class="fa-solid fa-table" style="font-size: 3rem; color: #2E7D32;"></i>
+                    <h3>गूगल सीट (लाइव डेटा)</h3>
+                    <p>पंजीकृत पुरोहितों, आगामी धार्मिक अनुष्ठानों की सूचियों और लाइव अपडेट्स को देखने के लिए नीचे क्लिक करें।</p>
+                </div>
+                <a href="https://google.com" target="_blank" class="btn btn-sheet">गूगल सीट देखें</a>
+            </div>
 
-        <!-- संपर्क सूत्र -->
-        <div class="contact-info">
-            <p>📞 अधिक जानकारी के लिए संपर्क करें: <strong>6203825376</strong></p>
-        </div>
-    </div>
-</div>
+            <!-- सोशल मीडिया कार्ड -->
+            <div class="card">
+                <div>
 
-</body>
-</html>
