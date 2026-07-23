@@ -3,117 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पुरोहित सेवा - वैदिक अनुष्ठान, ज्योतिष एवं कल्याण संस्था</title>
-    <!-- Tailwind CSS for Modern & Responsive Layout -->
+    <title>पुरोहित सेवा - वैदिक अनुष्ठान एवं डिजिटल ज्योतिष मंच</title>
+    <!-- Tailwind CSS for Ultra-Modern Digital Layout -->
     <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome for Premium Spiritual Icons -->
+    <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Google Fonts for Traditional Hindi look -->
+    <!-- Premium Google Fonts for Hindi & Sanskrit Verses -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         body { font-family: 'Tiro Devanagari Hindi', serif; }
         .spiritual-font { font-family: 'Rozha One', serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(180, 83, 9, 0.85), rgba(220, 38, 38, 0.85)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-orange-50 text-gray-800 antialiased">
+<body class="bg-stone-50 text-gray-900 antialiased">
 
-    <!-- 1. TOP ANNOUNCEMENT BAR (Saves All Corrected Contact Channels) -->
-    <div class="bg-amber-700 text-white text-sm py-2 px-4 shadow-md">
+    <!-- 1. DIGITAL TOP BAR (All Fixed Active Channels) -->
+    <div class="bg-amber-800 text-white text-xs sm:text-sm py-2 px-4 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex flex-wrap justify-center items-center gap-4">
-                <span class="bg-amber-800 px-3 py-0.5 rounded-full font-bold text-yellow-300 animate-pulse text-xs">🔴 लाइव अपडेट</span>
-                <a href="https://whatsapp.com" target="_blank" class="hover:text-green-300 transition flex items-center gap-1 font-semibold">
-                    <i class="fa-brands fa-whatsapp text-lg text-green-400"></i> हमारे व्हाट्सएप चैनल से जुड़ें
+                <span class="bg-yellow-400 text-amber-950 px-2.5 py-0.5 rounded-full font-black text-xs tracking-wider uppercase">डिजिटल पोर्टल</span>
+                <!-- FIXED WHATSAPP CHANNEL LINK -->
+                <a href="https://whatsapp.com" target="_blank" class="hover:text-green-300 transition flex items-center gap-1 font-bold">
+                    <i class="fa-brands fa-whatsapp text-base text-green-400"></i> व्हाट्सएप चैनल से जुड़ें
                 </a>
             </div>
-            <div class="flex items-center gap-4">
-                <span class="font-semibold"><i class="fa-solid fa-phone text-yellow-400 mr-1"></i> संपर्क: 6203825376</span>
-                <div class="h-4 w-px bg-amber-500 hidden sm:block"></div>
-                <div class="flex gap-3">
+            <div class="flex items-center gap-4 font-semibold">
+                <span><i class="fa-solid fa-phone text-yellow-400 mr-1"></i> संपर्क: +91 6203825376</span>
+                <div class="h-4 w-px bg-amber-600 hidden sm:block"></div>
+                <div class="flex gap-4">
+                    <!-- FIXED FACEBOOK LINK -->
                     <a href="https://facebook.com" target="_blank" class="hover:text-blue-300 text-base" title="फेसबुक पेज"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://google.com" target="_blank" class="hover:text-green-300 text-base" title="पुरोहित डेटाबेस (गूगल शीट)"><i class="fa-solid fa-file-excel"></i></a>
+                    <!-- FIXED GOOGLE SHEET LINK -->
+                    <a href="https://google.com" target="_blank" class="hover:text-green-300 text-base" title="पंजीकृत पुरोहित सूची (गूगल शीट)"><i class="fa-solid fa-file-excel"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 2. STICKY PREMIUM NAVIGATION BAR -->
-    <nav class="bg-white border-b-4 border-amber-600 sticky top-0 z-50 shadow-md">
+    <!-- 2. BRANDING & PREMIUM NAVIGATION BAR -->
+    <nav class="bg-white/95 backdrop-blur border-b-4 border-amber-600 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="bg-amber-600 text-white p-2 rounded-full text-xl shadow-inner shadow-black/20">
+                <div class="bg-gradient-to-br from-amber-600 to-red-600 text-white p-2.5 rounded-2xl text-xl shadow-md">
                     <i class="fa-solid fa-om"></i>
                 </div>
                 <div>
-                    <span class="text-2xl md:text-3xl font-bold text-amber-800 block spiritual-font tracking-wide">पुरोहित सेवा</span>
-                    <span class="text-xs text-orange-600 block font-semibold tracking-widest mt-[-4px]">यतो धर्मस्ततो जयः</span>
+                    <span class="text-2xl md:text-3xl font-black text-amber-900 block spiritual-font tracking-wide">पुरोहित सेवा</span>
+                    <span class="text-xs text-red-600 block font-bold tracking-widest mt-[-2px]">वैदिकं कर्म च अध्यात्मम्</span>
                 </div>
             </div>
-            <div class="hidden lg:flex items-center gap-6 font-bold text-amber-900">
-                <a href="#home" class="hover:text-orange-600 transition">मुख्य पृष्ठ</a>
-                <a href="#about" class="hover:text-orange-600 transition">संस्था परिचय</a>
-                <a href="#join-purohit" class="text-orange-600 hover:text-orange-700 transition"><i class="fa-solid fa-circle-plus mr-1"></i>पुरोहित जुड़ें</a>
-                <a href="#yajimaan-portal" class="hover:text-orange-600 transition">यजमान बुकिंग</a>
-                <a href="#services-columns" class="hover:text-orange-600 transition">सेवा कॉलम</a>
-                <a href="#donation-box" class="bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition shadow flex items-center gap-1"><i class="fa-solid fa-heart"></i> दान करें</a>
+            <div class="hidden lg:flex items-center gap-6 font-extrabold text-amber-950 text-sm tracking-wide">
+                <a href="#home" class="hover:text-red-600 transition">मुख्य पृष्ठ</a>
+                <a href="#about" class="hover:text-red-600 transition">संस्था परिचय</a>
+                <a href="#services-columns" class="hover:text-red-600 transition">सेवा स्तम्भ</a>
+                <a href="#portal-section" class="bg-orange-100 text-orange-800 px-3 py-1.5 rounded-lg hover:bg-orange-200 transition">डिजिटल फॉर्म्स</a>
+                <a href="#donation-box" class="bg-gradient-to-r from-amber-600 to-red-600 text-white px-5 py-2.5 rounded-xl hover:opacity-90 transition shadow-md flex items-center gap-1.5"><i class="fa-solid fa-heart-circle-check"></i> दान/सहयोग</a>
             </div>
         </div>
     </nav>
 
-    <!-- 3. HERO BANNER WITH DIRECT ACTION BUTTONS -->
-    <header id="home" class="relative bg-gradient-to-br from-orange-600 via-orange-500 to-amber-500 text-white py-16 md:py-24 px-4 text-center shadow-inner overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <!-- 3. HERO BANNER WITH SPIRITUAL HD BACKGROUND WALLPAPER -->
+    <header id="home" class="hero-bg text-white py-20 md:py-28 px-4 text-center relative shadow-2xl">
         <div class="max-w-4xl mx-auto relative z-10">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-yellow-100 spiritual-font drop-shadow-md">विश्वसनीय एवं प्रामाणिक पुरोहित सेवा</h1>
-            <p class="text-lg md:text-2xl mb-10 text-orange-50 max-w-2xl mx-auto leading-relaxed">सनातन धर्म के समस्त यज्ञ, अनुष्ठान, कुण्डली दोष निवारण एवं वास्तु परामर्श हेतु देश के श्रेष्ठ विद्वान ब्राह्मणों से सीधे जुड़ने का एकमात्र डिजिटल मंच।</p>
-            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-                <a href="#join-purohit" class="bg-yellow-400 text-amber-950 font-black text-lg px-8 py-4 rounded-xl shadow-xl hover:bg-yellow-300 transition transform hover:-translate-y-1 flex items-center gap-2">
-                    <i class="fa-solid fa-user-plus"></i> पुरोहित रजिस्ट्रेशन फॉर्म
+            <span class="inline-block bg-white/20 backdrop-blur-sm text-yellow-300 font-bold px-4 py-1.5 rounded-full text-xs md:text-sm mb-4 tracking-wider uppercase border border-white/10">शुद्धता • प्रामाणिकता • परंपरा</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 text-yellow-100 spiritual-font drop-shadow-lg leading-tight">संस्कार और तकनीक का डिजिटल संगम</h1>
+            <p class="text-lg md:text-xl mb-10 text-orange-50 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">समस्त यज्ञ, अनुष्ठान, कुण्डली निर्माण एवं वास्तु फलादेश हेतु वैदिक विद्वान ब्राह्मणों को खोजने और उनसे सीधे संपर्क करने का आधुनिक मंच।</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#portal-section" class="bg-yellow-400 text-amber-950 font-black text-base px-8 py-4 rounded-xl shadow-xl hover:bg-yellow-300 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-solid fa-user-check"></i> पुरोहित रजिस्ट्रेशन फॉर्म
                 </a>
-                <a href="#yajimaan-portal" class="bg-amber-900 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:bg-amber-950 transition transform hover:-translate-y-1 flex items-center gap-2 border border-amber-700/50">
-                    <i class="fa-solid fa-calendar-check"></i> यजमान इंक्वायरी फॉर्म
+                <a href="#portal-section" class="bg-stone-900 text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl hover:bg-stone-800 transition transform hover:-translate-y-0.5 flex items-center gap-2 border border-stone-700">
+                    <i class="fa-solid fa-calendar-days"></i> यजमान इंक्वायरी फॉर्म
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- 4. ABOUT OUR SANSTHA SECTION -->
+    <!-- 4. ABOUT OUR SANSTHA SECTION WITH HD PHOTO -->
     <section id="about" class="max-w-6xl mx-auto px-4 py-16">
-        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-8 border-amber-600 relative">
-            <div class="absolute top-4 right-6 text-orange-100 text-7xl font-serif pointer-events-none hidden md:block"><i class="fa-solid fa-gopuram"></i></div>
-            <h2 class="text-3xl font-bold text-amber-800 mb-6 border-b pb-4 flex items-center gap-2 spiritual-font"><i class="fa-solid fa-shield-halved text-orange-500"></i>संस्था का उद्देश्य एवं परिचय</h2>
-            <p class="text-gray-700 leading-relaxed text-lg mb-6">
-                <strong>'पुरोहित सेवा'</strong> एक पावन धार्मिक और सामाजिक संकल्प है, जिसका गठन सनातन संस्कृति की मर्यादा और वैदिक कर्मकांडों की मौलिक शुद्धता को अक्षुण्ण रखने के लिए किया गया है। वर्तमान समय में यजमानों को योग्य और प्रामाणिक विद्वान ढूंढने में अत्यधिक कठिनाई होती है, वहीं सुदूर क्षेत्रों के ज्ञानी ब्राह्मणों को उचित मंच नहीं मिल पाता। हमारी संस्था इन दोनों के बीच एक मजबूत सेतु का कार्य करती है।
-            </p>
-            <p class="text-gray-700 leading-relaxed text-lg">
-                हमारा दृढ़ संकल्प है कि कुण्डली निर्माण, मुहूर्त शोधन, महामृत्युञ्जय जप, रुद्राभिषेक, शतचंडी महायज्ञ, श्रीमद्भागवत कथा और गृहप्रवेश जैसे सभी संस्कार शास्त्रों में वर्णित विधियों के अनुसार, योग्य आचारवान ब्राह्मणों के माध्यम से ही यजमानों के घरों और देवस्थानों पर संपन्न कराए जाएं।
-            </p>
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-stretch border border-stone-200">
+            <!-- Left Side Text Column -->
+            <div class="p-8 md:p-12 md:col-span-7 flex flex-col justify-center border-b md:border-b-0 md:border-r border-stone-100">
+                <span class="text-xs font-black tracking-widest text-red-600 uppercase mb-2">विश्वसनीय धार्मिक संकल्प</span>
+                <h2 class="text-3xl font-bold text-amber-950 mb-6 spiritual-font flex items-center gap-2"><i class="fa-solid fa-gopuram text-orange-500"></i>संस्था का परिचय एवं लक्ष्य</h2>
+                <div class="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
+                    <p>
+                        <strong>'पुरोहित सेवा'</strong> केवल एक वेबसाइट नहीं, बल्कि सनातन संस्कृति के गौरव, वैदिक ऋचाओं की शुद्धता और आचारवान ब्राह्मणों के मान-सम्मान को समर्पित एक सुव्यवस्थित डिजिटल संस्था है। इसका मुख्य उद्देश्य यजमानों को योग्य, सदाचारी और शास्त्र-ज्ञाता पुरोहितों से सीधे जोड़ना है।
+                    </p>
+                    <p>
+                        आज की व्यस्त जीवनशैली में सही मुहूर्त की गणना, शुद्ध उच्चारण के साथ यज्ञ, और भटकाव रहित वास्तु परामर्श मिलना कठिन हो गया है। हमारी संस्था पंचांग सम्मत सर्वशुद्ध गणना के साथ यज्ञ-अनुष्ठान, रुद्राभिषेक, महामृत्युञ्जय जप, सुन्दरकाण्ड, रामायण व भागवत कथा जैसे समस्त धार्मिक आयोजनों को पूर्ण प्रामाणिकता से संपन्न कराने हेतु प्रतिबद्ध है।
+                    </p>
+                </div>
+            </div>
+            <!-- Right Side Image Column (HD Spiritual Photo Integration) -->
+            <div class="md:col-span-5 relative min-h-[300px] bg-amber-900">
+                <img src="https://unsplash.com" alt="वैदिक अनुष्ठान एवं प्रार्थना" class="absolute inset-0 w-full h-full object-cover opacity-95">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                    <p class="text-white text-sm font-serif italic drop-shadow">"मंत्रहीनं क्रियाहीनं भक्तिहीनं सुरेश्वर, यत्पूजितं मया देव परिपूर्णं तदस्तु मे।"</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 5. MAIN SECTION: PUROHIT REGISTRATION & YAJIMAAN INQUIRY (TWO COLUMN PORTAL) -->
-    <section class="bg-amber-100/60 py-16 border-y border-amber-200 px-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-            
-            <!-- Column A: Dedicated Purohit Hub -->
-            <div id="join-purohit" class="bg-white p-8 rounded-3xl shadow-xl border border-orange-200 flex flex-col justify-between transform hover:scale-[1.01] transition duration-300">
-                <div>
-                    <div class="bg-orange-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-md mb-6"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-amber-900 mb-4 spiritual-font">विशेष: पुरोहित हमसे जुड़ें!</h3>
-                    <p class="text-gray-600 text-base leading-relaxed mb-6">
-                        यदि आप वेद, व्याकरण, ज्योतिष, वास्तु शास्त्र, कर्मकांड पद्धतियों या आध्यात्मिक कथा प्रवचन के प्रमाणित ज्ञाता ब्राह्मण हैं, तो हमारी संस्था का हिस्सा बनें। देश भर के यजमानों तक अपनी वैदिक सेवाओं को पहुँचाने के लिए नीचे दिए गए फॉर्म लिंक पर क्लिक करके अपना संपूर्ण विवरण (नाम, स्थान, योग्यता) तुरंत पंजीकृत करें।
-                    </p>
-                    <ul class="text-sm text-gray-700 space-y-2 mb-8 bg-orange-50/50 p-4 rounded-xl border border-orange-100">
-                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> विद्वान ब्राह्मणों के वृहद नेटवर्क में शामिल होने का अवसर</li>
-                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> आपका डेटा सीधे हमारी सुरक्षित <a href="https://google.com" target="_blank" class="text-amber-700 underline font-bold hover:text-orange-600">गूगल शीट डेटाबेस</a> में दर्ज होगा</li>
-                    </ul>
-                </div>
-                <a href="https://forms.gle" target="_blank" class="w-full text-center bg-orange-600 text-white font-bold py-4 rounded-xl hover:bg-orange-700 transition block shadow-lg hover:shadow-orange-600/20 text-lg">
-                    पुरोहित रजिस्ट्रेशन फॉर्म खोलें <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
-                </a>
+    <!-- 5. CATEGORIZED MODERN DIGITAL COLUMNS WITH LIVE HIGH-QUALITY PHOTOS -->
+    <section id="services-columns" class="bg-stone-100 py-16 border-y border-stone-200 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-3 spiritual-font">हमारी धार्मिक सेवाएं एवं डिजिटल स्तम्भ</h2>
+                <div class="h-1 w-20 bg-orange-600 mx-auto rounded-full"></div>
+                <p class="text-gray-600 mt-3 text-sm md:text-base">शास्त्रोक्त पद्धतियों के आधार पर विभाजित हमारे चार मुख्य आध्यात्मिक प्रभाग।</p>
             </div>
-
-            <!-- Column B: Dedicated Yajamaan Inquiry Box -->
-            <div id="yajimaan-portal" class="bg-white p-8 rounded-3xl shadow-xl border border-amber-200 flex flex-col justify-between transform hover:scale-[1.01] transition duration-300">
-                <div>
-
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Jyotish -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <img src="https://unsplash.com" alt="ज्योतिष" class="h-40 w-full object-cover">
+                    <div class="p-5 flex-grow">
+                        <h3 class="text-lg font-black text-amber-950 mb-2 border-b pb-1"><i class="fa-solid fa-star-of-david text-orange-500 mr-1.5"></i>ज्योतिष व कुण्डली</h3>
